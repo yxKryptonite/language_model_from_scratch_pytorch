@@ -7,7 +7,8 @@ device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 def softmax(x):
     return np.exp(x) / np.sum(np.exp(x))
 
-class vallina_LSTM(nn.Module):
+# 'vanilla'
+class vanilla_LSTM(nn.Module):
     def __init__(self, words_num, input_size, hidden_size, num_layers):
         super().__init__()
         self.hidden_size = hidden_size

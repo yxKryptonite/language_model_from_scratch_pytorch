@@ -14,7 +14,7 @@ This is my first attempt to build a language model in PyTorch in preparation for
 # Brief introduction
 The project contains 2 Python scripts:
 - [dataload.py](dataload.py): A dataset class derived from `torch.utils.data.Dataset`, you can choose your txt file and load it. By the way, it can also generate word vectors (although we might not use them).
-- [lgg_model.py](lgg_model.py): A language model class, which now contains a vallina LSTM model, you can add your own model classes to it and use them in the [train.ipynb](train.ipynb) below.
+- [lgg_model.py](lgg_model.py): A language model class, which now contains a vanilla LSTM model, you can add your own model classes to it and use them in the [train.ipynb](train.ipynb) below.
 
 also, there are 2 jupyter notebooks:
 - [train.ipynb](train.ipynb): A notebook for training. You can choose different data and use [dataload.py](dataload.py) to load it and choose different models to train. Be sure to have installed tensorboard to see the training process.
