@@ -1,4 +1,10 @@
-[toc]
+- [language_model_from_scratch_pytorch](#language_model_from_scratch_pytorch)
+- [Brief introduction](#brief-introduction)
+- [For developers](#for-developers)
+- [LOGS](#logs)
+  - [2022/2/26](#2022226)
+  - [2022/2/27](#2022227)
+- [Credits](#credits)
 # language_model_from_scratch_pytorch
 a manageable and trainable language model in PyTorch
 
@@ -28,3 +34,8 @@ First developed this model, which needs more refinement.
 Add a **learning rate decay scheduler** to the optimizer, which leads to better results.
 Also, for larger corpus, we can increase the hidden size from 50 to 100 to increase the number of parameters, which will enhance the expressiveness of the model and decrease the loss.
 In the near future, more features, such as new model architectures, jieba based word separation and more powerful optimizing techniques, will be added.
+
+- - -
+# Credits
+Thanks for Zhihu user **[@若小仟](https://www.zhihu.com/people/bing-feng-ruo-qian)** for the inspiration of this LSTM model.
+To learn more, check out his repository: [clickhere](https://github.com/hhiim/Lacan)
