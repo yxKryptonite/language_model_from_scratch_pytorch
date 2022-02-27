@@ -8,7 +8,7 @@
 # language_model_from_scratch_pytorch
 a manageable and trainable language model in PyTorch
 
-This is my first attempt to build a language model in PyTorch in preparation for the NLP class of the course *Introduction to AI* in Peking University.
+This is my first attempt to build a language model in PyTorch in preparation for the NLP class of the course ***Introduction to AI*** in Peking University.
 
 - - -
 # Brief introduction
@@ -24,7 +24,7 @@ also, there are 2 jupyter notebooks:
 # For developers
 Feel free to change the hyperparameters and optimize the language model.
 
-The main problem of this model is that it lacks learning rate decay and batch normalization, which I will add in the near future.
+The main problem of this model is that it ~~lacks learning rate decay~~ and batch normalization, which I will add in the near future.
 
 - - -
 # LOGS
