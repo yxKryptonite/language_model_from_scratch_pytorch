@@ -37,6 +37,8 @@ Also, for larger corpus, we can increase the hidden size from 50 to 100 to incre
 In the near future, more features, such as new model architectures, jieba based word separation and more powerful optimizing techniques, will be added.
 ## 2022/2/28
 Add dropout and batchnorm, but batchnorm isn't working, so I delete it temporarily.
+Also, I divide the dataset to trainset and validationset, and use the validationset to see whether the model is overfitting.
+In summary, the overall effect of the change to the model architecture is not so satisfying.
 
 - - -
 # Credits
