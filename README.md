@@ -5,6 +5,7 @@
   - [2022/2/26](#2022226)
   - [2022/2/27](#2022227)
   - [2022/2/28](#2022228)
+    - [second update](#second-update)
 - [Credits](#credits)
 # language_model_from_scratch_pytorch
 a manageable and trainable language model in PyTorch
@@ -43,6 +44,9 @@ Add dropout and batchnorm, but batchnorm isn't working, so I delete it temporari
 Also, I divide the dataset to trainset and validationset, and use the validationset to see whether the model is overfitting.
 
 In summary, the overall effect of the change to the model architecture is not so satisfying.
+
+### second update
+Add a vanilla_GRU model, which is simpler, but less overfitting.
 
 - - -
 # Credits

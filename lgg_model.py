@@ -50,3 +50,22 @@ class LSTM_enhanced(nn.Module):
         # data = self.bn(data)
         out = self.Linear(data)
         return out
+        
+
+# 2022/2/28 reduce the power of the vanilla_LSTM model, hoping to reduce the overfitting
+class vanilla_GRU(nn.Module):
+    def __init__(self, words_num, input_size, hidden_size, num_layers):
+        super().__init__()
+        self.hidden_size = hidden_size
+        self.num_layers = num_layers
+        self.Embedding = nn.Embedding(num_embeddings=words_num, embedding_dim=input_size)
+        self.GRU = nn.GRU(input_size, hidden_size, num_layers, batch_first=True, dropout=0.5)
+        self.Linear = nn.Linear(hidden_size, words_num)
+
+
+    def forward(self, data):
+        data = self.Embedding(data)
+        a0 = torch.zeros(self.num_layers, data.shape[0], self.hidden_size, device=device)
+        data, _ = self.GRU(data, a0)
+        out = self.Linear(data)
+        return out
