@@ -33,14 +33,19 @@ The main problem of this model is that it ~~lacks learning rate decay~~ and batc
 First developed this model, which needs more refinement.
 ## 2022/2/27
 Add a **learning rate decay scheduler** to the optimizer, which leads to better results.
+
 Also, for larger corpus, we can increase the hidden size from 50 to 100 to increase the number of parameters, which will enhance the expressiveness of the model and decrease the loss.
+
 In the near future, more features, such as new model architectures, jieba based word separation and more powerful optimizing techniques, will be added.
 ## 2022/2/28
 Add dropout and batchnorm, but batchnorm isn't working, so I delete it temporarily.
+
 Also, I divide the dataset to trainset and validationset, and use the validationset to see whether the model is overfitting.
+
 In summary, the overall effect of the change to the model architecture is not so satisfying.
 
 - - -
 # Credits
 Thanks for Zhihu user **[@若小仟](https://www.zhihu.com/people/bing-feng-ruo-qian)** for the inspiration of this LSTM model.
+
 To learn more, check out his repository: [clickhere](https://github.com/hhiim/Lacan)
