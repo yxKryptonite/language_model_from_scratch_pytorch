@@ -7,6 +7,7 @@
   - [2022/2/28](#2022228)
     - [addition](#addition)
   - [2022/3/1](#202231)
+    - [addition](#addition-1)
 - [Credits](#credits)
 # language_model_from_scratch_pytorch
 a manageable and trainable language model in PyTorch
@@ -49,9 +50,25 @@ In summary, the overall effect of the change to the model architecture is not so
 ### addition
 Add a vanilla_GRU model, which is simpler, but less overfitting.
 ## 2022/3/1
-Modify the code for validation, train a few models.
+**Modify** the code for **validation**, train a few models.
 
-Merge datasets.
+Merge datasets and add a new dataset.
+
+Try out multiple lr decay methods and LSTM layers and watch their effects.
+
+Learn how to use tensorboard effectively.
+### addition
+At first, I thought the lr of 0.003 is too big, so I change it into 0.0015, 0.001, 1e-4 and even 1e-5. But it was a mistake. It performs worse and worse. 
+
+To my surprise, when I change lr back to 0.005 (a little more than 0.003), it performs better.
+
+The reason is unclear, but I think it results from the complexity of the model.
+
+- - -
+
+Anyway, from 2022/3/2, the project may not be updated anymore because I am preparing to launch a few new projects. Maybe at some point of the class, I will take it out, make some modifications and update it.
+
+***Stay tuned.***
 
 - - -
 # Credits
