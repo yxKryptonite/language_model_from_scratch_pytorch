@@ -5,7 +5,8 @@
   - [2022/2/26](#2022226)
   - [2022/2/27](#2022227)
   - [2022/2/28](#2022228)
-    - [second update](#second-update)
+    - [addition](#addition)
+  - [2022/3/1](#202231)
 - [Credits](#credits)
 # language_model_from_scratch_pytorch
 a manageable and trainable language model in PyTorch
@@ -45,8 +46,12 @@ Also, I divide the dataset to trainset and validationset, and use the validation
 
 In summary, the overall effect of the change to the model architecture is not so satisfying.
 
-### second update
+### addition
 Add a vanilla_GRU model, which is simpler, but less overfitting.
+## 2022/3/1
+Modify the code for validation, train a few models.
+
+Merge datasets.
 
 - - -
 # Credits
